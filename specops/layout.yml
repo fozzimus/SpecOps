@@ -1,8 +1,7 @@
-#ainda não foi alterado lá do exemplo do site
 AllText:
-  font: ChunkFive Roman,Sans 50
+  font: Arial, Sans 45
   align: center
-  color: '#F3EFE3'
+  color: '#000000'
   width: 825
 
 Title:
@@ -15,7 +14,7 @@ TextoEquipamento:
   font_size: 20
 IconeEquipamento:
   extends: TextoEquipamento
-  x: 345
+  x: 335
   y: -= 150
   width: 150
   height: 150
@@ -30,6 +29,7 @@ IconeRegraEspecial:
 TextoPontos:
   extends: TextoEquipamento
   y: += 400
+  x: 0
 #IconePontos:
 #  extends: IconeEquipamento
 #  y: += 100
