@@ -1,29 +1,38 @@
 require 'squib'
 
-Squib::Deck.new(cards: 7, layout: 'layout.yml') do
-  #background color: '#4b5320'
-  # ^ military green ^
+Squib::Deck.new(cards: 7, layout: %w(hand.yml layout.yml)) do
   background color: '#919191'
-#  ^ grey ^
-
   deck = csv file: 'unidades.csv'
+  svg file: deck['Arte'], layout: 'Arte'
 
-  text str: deck['Nome'], layout: :Title
+#  %w(Title Description Snark).each do |key|
+#    text str: deck[key], layout: key
+#  end
 
-  svg file: 'attack.svg', layout: :IconeEquipamento
-  text str: deck['Equipamento'], layout: :TextoEquipamento
+  %w(Title Description Snark).each do |key|
+    text str: deck[key], layout: key
+  end
 
-# ---------------
-#  svg file: 'defend.svg', layout: :IconeEquipamento
-#  text str: deck['Morteiro'], layout: :TextoEquipamento
-#----------------
+  %w(Attack Defend Health).each do |key|
+    svg file: "#{key.downcase}.svg", layout: "#{key}Icone"
+    text str: deck[key], layout: key
+  end
 
-  svg file: 'defend.svg', layout: :IconeRegraEspecial
-  text str: deck['Regra Especial'], layout: :TextoRegraEspecial
+#  %w(Attack Defend Health).each do |key|
+#    svg file: "#{key.downcase}.svg", layout: "#{key}Icon"
+#    text str: deck[key], layout: key
+#  end
 
-  #svg file: 'pontos.svg', layout: :IconePontos
-  text str: deck['Pontos'], layout: :TextoPontos
+  save_png prefix: 'unidades_'
+  showcase file: 'showcase.png', fill_color: '#0000'
+  hand file: 'hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
+end
 
-  save_png prefix: 'unidades'
-  save_pdf trim: 37.5
+Squib::Deck.new(cards: 10, layout: %w(hand.yml, layout.yml)) do
+  background color: '#919191'
+  deck = csv file: 'armas.csv'
+  svg file: deck['Arte'], lauout: 'Arte'
+
+  # CÓDIGO PARA GERAÇÃO DE CARTAS DE ARMAS
+
 end

@@ -1,35 +1,47 @@
-AllText:
-  font: Arial, Sans 45
-  align: center
-  color: '#000000'
-  width: 825
-
 Title:
-  extends: AllText
-  y: 150
+  extends: title # from hand.yml
+  font: ChunkFive Roman,Sans 58
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
 
-TextoEquipamento:
-  extends: AllText
-  y: 600
-  font_size: 20
-IconeEquipamento:
-  extends: TextoEquipamento
-  x: 335
-  y: -= 150
-  width: 150
-  height: 150
+Art:
+  extends: art
 
-TextoRegraEspecial:
-  extends: TextoEquipamento
+Description:
+  extends: description # from hand.yml
+  font: Sans 36
+  color: '#F3EFE3'
+  align: center
+
+Snark:
+  extends: snark # from hand.yml
+  font: Sans italic 18
+  align: center
+  valign: middle
+  color: '#F3EFE3'
+
+Attack:
+  extends: bonus1 # from hand.yml
+  font: ChunkFive Roman,Sans 48
+  color: '#F3EFE3'
+  y: += 70
+AttackIcon:
+  extends: bonus1 # from hand.yml
+  x: += 40
+  width: -= 40
+  height: -= 40
+
+Defend:
+  extends: Attack
   y: += 200
-IconeRegraEspecial:
-  extends: IconeEquipamento
+DefendIcon:
+  extends: AttackIcon
   y: += 200
 
-TextoPontos:
-  extends: TextoEquipamento
-  y: += 400
-  x: 0
-#IconePontos:
-#  extends: IconeEquipamento
-#  y: += 100
+Health:
+  extends: Defend
+  y: += 200
+HealthIcon:
+  extends: DefendIcon
+  y: += 200

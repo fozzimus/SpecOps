@@ -1,8 +1,8 @@
-Nome,Equipamento,"Regra Especial",Pontos
-"Fuzileiros (5)","Rifles","-",25
-"Fuzileiros (10)","Rifles","-",50
-"Forças Especiais (5)","Carabinas","Elite",40
-"Forças Especiais (10)","Carabinas","Elite",80
-"Atirador Pesado (1)","Metralhadora","-",10
-"Atirador de Elite (1)","Rifle de Precisão","Batedor",10
-"Atirador de Suporte (1)","Morteiro","Radio",20
+"Nome","Equipamento","Regra Especial","Pontos","Alcance","Poder de Fogo","Arte"
+"Fuzileiros (5)","Rifles","-",25,"60cm",1,"arte fuzileiro 5"
+"Fuzileiros (10)","Rifles","-",50,"60cm",1,"arte fuzileiro 10"
+"Forças Especiais (5)","Carabinas","Elite – Esta unidade pode re-rolar uma vez todos os testes que falhar.",40,"45cm",1,"arte specops 5"
+"Forças Especiais (10)","Carabinas","Elite – Esta unidade pode re-rolar uma vez todos os testes que falhar.",80,"45cm",1,"arte specops 10"
+"Atirador Pesado (1)","Metralhadora","-",10,"90cm",3,"arte pesado"
+"Atirador de Elite (1)","Rifle de Precisão","Batedor – Essa unidade precisa de 2+ para passar em Testes de Tiro, e o alvo não pode realizar Testes de Defesa. O alvo precisa de 3+ se estiver em cobertura.",10,"90cm",1,"arte elite"
+"Atirador de Suporte (1)","Morteiro","Radio - Essa unidade pode atirar em inimigos que não vê, desde que alguma unidade amiga tenha linha de visão para o alvo.",20,"120cm","D6","arte suporte"
