@@ -6,11 +6,17 @@ Squib::Deck.new(cards: 7, layout: 'layout.yml') do
 
   text str: deck['Nome'], layout: :Title
 
-  svg file: 'attack.svg', layout: :AttackIcon
-  text str: deck['Attack'], layout: :AttackText
+  svg file: 'attack.svg', layout: :IconeEquipamento
+  text str: deck['Equipamento'], layout: :TextoEquipamento
 
-  svg file: 'defend.svg', layout: :DefendIcon
-  text str: deck['Defend'], layout: :DefendText
+  svg file: 'defend.svg', layout: :IconeRegraEspecial
+  text str: deck['Regra Especial'], layout: :TextoRegraEspecial
+
+  #svg file: 'pontos.svg', layout: :IconePontos
+  text str: deck['Pontos'], layout: :TextoPontos
+
+  #svg file: 'defend.svg', layout: :DefendIcon
+  #text str: deck['Pontos'], layout: :DefendText
 
   save_png prefix: 'bigger_'
 end
