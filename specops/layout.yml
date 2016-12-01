@@ -1,47 +1,47 @@
-Title:
+nome:
   extends: title # from hand.yml
-  font: ChunkFive Roman,Sans 58
-  color: '#F3EFE3'
+  font: Arial,Sans 35
+  color: '#000000'
   align: center
   spacing: -15
 
-Art:
+arte:
   extends: art
 
-Description:
+equipamento:
   extends: description # from hand.yml
-  font: Sans 36
-  color: '#F3EFE3'
+  font: Arial,Sans 36
+  color: '#000000'
   align: center
 
-Snark:
+regra_especial:
   extends: snark # from hand.yml
-  font: Sans italic 18
+  font: Sans 20
   align: center
   valign: middle
-  color: '#F3EFE3'
+  color: '#000000'
 
-Attack:
+poder_de_fogo:
   extends: bonus1 # from hand.yml
-  font: ChunkFive Roman,Sans 48
-  color: '#F3EFE3'
+  font: Arial,Sans 30
+  color: '#000000'
   y: += 70
-AttackIcon:
+iconepoder_de_fogo:
   extends: bonus1 # from hand.yml
-  x: += 40
-  width: -= 40
-  height: -= 40
+  x: += 50
+  width: -= 50
+  height: -= 50
 
-Defend:
-  extends: Attack
+alcance:
+  extends: poder_de_fogo
   y: += 200
-DefendIcon:
-  extends: AttackIcon
+iconealcance:
+  extends: iconepoder_de_fogo
   y: += 200
 
-Health:
-  extends: Defend
+pontos:
+  extends: alcance
   y: += 200
-HealthIcon:
-  extends: DefendIcon
+iconepontos:
+  extends: iconealcance
   y: += 200

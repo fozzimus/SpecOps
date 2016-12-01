@@ -3,18 +3,18 @@ require 'squib'
 Squib::Deck.new(cards: 7, layout: %w(hand.yml layout.yml)) do
   background color: '#919191'
   deck = csv file: 'unidades.csv'
-  svg file: deck['Arte'], layout: 'Arte'
+  svg file: deck['arte'], layout: 'arte'
 
 #  %w(Title Description Snark).each do |key|
 #    text str: deck[key], layout: key
 #  end
 
-  %w(Title Description Snark).each do |key|
+  %w(nome equipamento regra_especial).each do |key|
     text str: deck[key], layout: key
   end
 
-  %w(Attack Defend Health).each do |key|
-    svg file: "#{key.downcase}.svg", layout: "#{key}Icone"
+  %w(poder_de_fogo alcance pontos).each do |key|
+    svg file: "#{key.downcase}.svg", layout: "icone#{key}"
     text str: deck[key], layout: key
   end
 
@@ -28,11 +28,11 @@ Squib::Deck.new(cards: 7, layout: %w(hand.yml layout.yml)) do
   hand file: 'hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
 end
 
-Squib::Deck.new(cards: 10, layout: %w(hand.yml, layout.yml)) do
-  background color: '#919191'
-  deck = csv file: 'armas.csv'
-  svg file: deck['Arte'], lauout: 'Arte'
+#Squib::Deck.new(cards: 10, layout: %w(hand.yml, layout.yml)) do
+#  background color: '#919191'
+#  deck = csv file: 'armas.csv'
+#  svg file: deck['Arte'], lauout: 'Arte'
 
-  # CÓDIGO PARA GERAÇÃO DE CARTAS DE ARMAS
+#  # CÓDIGO PARA GERAÇÃO DE CARTAS DE ARMAS
 
-end
+#end
