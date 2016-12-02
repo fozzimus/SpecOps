@@ -13,7 +13,7 @@ Squib::Deck.new(cards: 7, layout: %w(hand.yml layout.yml)) do
     text str: deck[key], layout: key
   end
 
-  %w(poder_de_fogo alcance pontos).each do |key|
+  %w(poder_de_fogo alcance pontos tamanho).each do |key|
     svg file: "#{key.downcase}.svg", layout: "icone#{key}"
     text str: deck[key], layout: key
   end

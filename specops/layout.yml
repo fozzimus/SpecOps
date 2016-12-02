@@ -45,3 +45,10 @@ pontos:
 iconepontos:
   extends: iconealcance
   y: += 200
+
+tamanho:
+  extends: pontos
+  y: += 200
+iconetamanho:
+  extends: iconepontos
+  y: += 200

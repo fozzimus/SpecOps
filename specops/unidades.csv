@@ -1,8 +1,8 @@
-"nome","equipamento","regra_especial","pontos","alcance","poder_de_fogo","arte"
-"Fuzileiros (5)","Rifles","-",25,"60",1,"_fuzileiro.svg"
-"Fuzileiros (10)","Rifles","-",50,"60",1,"_fuzileiro.svg"
-"Forças Especiais (5)","Carabinas","Elite – Re-rolar uma vez todos os testes que falhar.",40,"45",1,"_specfor.svg"
-"Forças Especiais (10)","Carabinas","Elite – Re-rolar uma vez todos os testes que falhar.",80,"45",1,"_specfor.svg"
-"Atirador Pesado (1)","Metralhadora","-",10,"90",3,"_pesado.svg"
-"Atirador de Elite (1)","Rifle de Precisão","Batedor – Testes de Tiro = 2+. O alvo não realiza Testes de Defesa (3+ se estiver em cobertura)",10,"90",1,"_atirador.svg"
-"Atirador de Suporte (1)","Morteiro","Radio - Pode atirar em inimigos que não vê, se unidade amiga tiver linha de visão para o alvo.",20,"120","D6","_morteiro.svg"
+"nome","equipamento","regra_especial","pontos","alcance","poder_de_fogo","arte","tamanho"
+"Fuzileiros","Rifles","-",25,"60",1,"_fuzileiro.svg",5
+"Fuzileiros","Rifles","-",50,"60",1,"_fuzileiro.svg",10
+"Forças Especiais","Carabinas","Elite – Re-rolar uma vez todos os testes que falhar.",40,"45",1,"_specfor.svg",5
+"Forças Especiais","Carabinas","Elite – Re-rolar uma vez todos os testes que falhar.",80,"45",1,"_specfor.svg",10
+"Atirador Pesado","Metralhadora","-",10,"90",3,"_pesado.svg",1
+"Atirador de Elite","Rifle de Precisão","Batedor – Testes de Tiro = 2+. O alvo não realiza Testes de Defesa (3+ se estiver em cobertura)",10,"90",1,"_atirador.svg",1
+"Atirador de Suporte","Morteiro","Radio - Pode atirar em inimigos que não vê, se unidade amiga tiver linha de visão para o alvo.",20,"120","D6","_morteiro.svg",1
