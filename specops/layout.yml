@@ -28,7 +28,7 @@ poder_de_fogo:
   y: += 70
 iconepoder_de_fogo:
   extends: bonus1 # from hand.yml
-  x: += 50
+  x: += 70
   width: -= 50
   height: -= 50
 
