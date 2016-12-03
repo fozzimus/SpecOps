@@ -8,7 +8,7 @@ nome:
 arte:
   extends: art
 
-equipamento:
+arma:
   extends: description # from hand.yml
   font: Arial,Sans 36
   color: '#000000'
@@ -44,11 +44,4 @@ pontos:
   y: += 200
 iconepontos:
   extends: iconealcance
-  y: += 200
-
-tamanho:
-  extends: pontos
-  y: += 200
-iconetamanho:
-  extends: iconepontos
   y: += 200

@@ -1,11 +1,6 @@
-"Arma","Alcance","Poder de Fogo"
-"Punhos","- ",1
-"Baioneta","-",2
-"Granada","15cm","D6"
-"Lança-Chamas","30cm","2D6"
-"Carabina","45cm",1
-"Rifle","60cm",1
-"Rifle de Precisão","90cm",1
-"Metralhadora","90cm",3
-"Bazuca","90cm","D6"
-"Morteiro","120cm","D6"
+"arma","alcance","poder_de_fogo","arte","pontos","regra_especial"
+"Punhos","",1,"_punho.svg","","Todo modelo possui essa arma"
+"Baioneta","",2,"_baioneta.svg","10","Todos os modelos ganham essa arma"
+"Granada","15","D6","_granada.svg","5","Cada modelo precisa pagar separadamente"
+"Lança-Chamas","30","2D6","_chamas.svg","10","Máximo de 2 em seu exército"
+"Bazuca","90","D6","_bazuca.svg","10","Máximo de 2 em seu exército"
